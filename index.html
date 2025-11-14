@@ -234,7 +234,7 @@
       return `
         <section class="hero">
           <div class="hero-inner container">
-            <div class="pill">The Guild for Transformation</div>
+            <div class="pill">The Guild for In-Between Professionals</div>
             <h1 style="margin-top:12px">A Professional Home for People Who Make Change Possible</h1>
             <p style="margin:20px auto 0; max-width:720px">We recognise and resource the people who guide transitions — where AI reshapes value, jobs and governance, and organisations must act with care in ambiguity.</p>
             <div style="margin-top:24px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center">
@@ -250,7 +250,7 @@
       `;
     }
     function AboutIdentity(){
-      const bullets = ["Holds tough rooms with care","Makes direction legible in ambiguity","Designs processes, not just workshops","Practices ethics & consent, not just outcomes"];
+      const bullets = ["Hovers between big picture to details","Translate challenges and vision across functions","Hold emotions, tensions and trust","Make things happen with limited mandate and resources"];
       return `
         <section class="section">
           <div class="container grid grid-2" style="align-items:center">
@@ -260,9 +260,9 @@
               <button class="btn btn-mint" data-nav="rubric">Take the self-check</button>
             </div>
             <div class="card">
-              <h3>The Badge</h3>
-              <p>A peer-reviewed credential grounded in ethics, practice hours and contribution.</p>
-              <div style="margin-top:8px"><button class="btn btn-cream" data-nav="guild">Read the Code of Practice</button></div>
+              <h3 style="font-size:28px">Stories</h3>
+              <p>Listen to Shapeshifters and read the patterns behind their practice.</p>
+              <button class="btn btn-cream" data-nav="stories">Open Stories</button>
             </div>
           </div>
         </section>
@@ -283,7 +283,7 @@
       return `
         <section class="section">
           <div class="container">
-            <h2>Shapeshifter: the craft in a changing economy</h2>
+            <h2>Shapeshifter: essential craft for a changing economy</h2>
             <p style="max-width:780px">AI is rewiring value chains and decision flows. Autonomous agents take on coordination; interfaces collapse; customers expect real-time adaptation. In this shift, someone has to hold the hard rooms: making direction legible, securing consent, and designing the path from words to work. That professional is a <em>Shapeshifter</em>.</p>
             <p style="max-width:780px">Titles vary by context — coach, facilitator, org designer, policy or foresight lead, transformation officer, mediator — but the craft rhymes. The guild recognises that craft, sets standards for safety and ethics, and grows a commons of re-usable patterns.</p>
             <div class="grid grid-3" style="margin-top:24px">
@@ -318,24 +318,6 @@
         </section>
       `;
     }
-    function DirectoryTeasers(){
-      return `
-        <section class="section">
-          <div class="container grid grid-2">
-            <div class="card">
-              <h3 style="font-size:28px">Directory</h3>
-              <p>A vetted guild of practitioners with sector depth and the craft to hold transformative rooms.</p>
-              <button class="btn btn-mint" data-nav="directory">Browse profiles</button>
-            </div>
-            <div class="card">
-              <h3 style="font-size:28px">Stories</h3>
-              <p>Listen to Shapeshifters and read the patterns behind their practice.</p>
-              <button class="btn btn-cream" data-nav="stories">Open Stories</button>
-            </div>
-          </div>
-        </section>
-      `;
-    }
     function ChaptersSignals(){
       return `
         <section class="section">
@@ -343,7 +325,7 @@
             <div class="card">
               <h3 style="font-size:28px">Chapters & Events</h3>
               <ul>${EVENTS.map(e=>`<li>${e.when} • ${e.where} — ${e.name}</li>`).join('')}</ul>
-              <button class="btn btn-cream" data-nav="chapters">Start a Chapter</button>
+              <button class="btn btn-cream" data-nav="chapters">Join a Chapter</button>
             </div>
             <div class="card">
               <h3 style="font-size:28px">Signals</h3>
